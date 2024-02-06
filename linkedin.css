@@ -510,54 +510,31 @@ label {
     }
     body{
         width:70%;
+         margin-top: 30px;
     }
 
 }
 
-#header-log{
-display: flex;
-gap: 20px;
-}
-#left-header img{
-    width: 20%;
-}
-#middle-header{
-    display: flex;
-    margin-left: -400px;
-}
-.one1{
-position: absolute;
-    left: 600px;
-}
-.one2{
-    position: absolute;
-    left: 670px;
-}
-.one3{
-    position: absolute;
-    left: 730px; 
-}
-.one4{
-    position: absolute;
-    left: 800px;  
-}
-.one5{
-    position: absolute;
-    left: 850px; 
-}
-hr{
-    margin-left: 80px;
-    margin-top: 0;
+ img{
+    width: 100%;
+    margin-top: 30px;
 }
 
+#middle-header{
+    margin-top: 30px;
+}
+#right-header{
+    margin-top: 30px;
+   
+}
 #right-header .button1{
     border: 1px solid transparent;
     cursor: pointer;
     border-radius: 40px;
     background-color: transparent;
-    padding: 15px 20px;
-    right: 115px;
-    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 90px;
 }
 #right-header .button1:hover{
     background-color: #f3f2f0;
@@ -569,23 +546,23 @@ hr{
     border: 1px solid #0a66c2;
     cursor: pointer;
     border-radius: 40px;
-    padding: 15px 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: 600;
-   cursor: pointer;
-   position: absolute;
-   right: 20px;
+    width: 90px;
+    margin-right: 30px;
+}
+#right-header .button2:hover{
+    background-color: rgb(226, 240, 244);
+    color:darkblue;
 }
 body{
     padding-top: 0;
     margin-left: 60px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: white;
 }
-.one{
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    margin-right:20px ;
-}
+
 div label{
     width: 200px;
 }
@@ -599,13 +576,13 @@ a:hover {
     opacity: 1;
 }
 #firt-para{
-    display: flex;
+   
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
 }
 #left-para1{
     width: 100%;
+    margin-top: 10%;
 }
 #left-para1 h1{
     color:#bb563a;
@@ -616,7 +593,7 @@ a:hover {
     font-size: 12px;
 }
 #name{
-    width: 65%;
+    width: 100%;
     height: 48px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -624,7 +601,7 @@ a:hover {
     border-radius: 5px;
 }
 #password{
-    width: 65%;
+    width: 100%;
     height: 48px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -635,54 +612,159 @@ a:hover {
     color:#0a66c2;
     opacity: 1;
 }
-#button3{
+#button3 {
     background-color:#0a66c2;
     color: white;
     border: none;
-    padding: 15px 170px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 50px;
-    margin-left: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .comment{
     margin-top: 20px;
     font-size: 12px;
+    text-align: center;
 }
-#email{
+.or{
+   text-align: center; 
+}
+#email {
     background-color:transparent;
     color: black;
     border: 1px solid black;
-    padding: 20px 190px;
+   padding-top: 15px;
+   padding-bottom: 15px;
     border-radius: 50px;
-    margin-left: 20px;
     margin-bottom: 20px; 
     margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
 }
 #new{
     background-color:transparent;
     color: black;
     border: 1px solid black;
-    padding: 12px 110px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 50px;
-    margin-left: 20px;
-    margin-bottom: 20px;   
+    margin-bottom: 20px; 
+    text-align: center; 
 }
 #right-para1 img{
    width: 100%;
-   margin-top: 15%;
+   margin-top: 25%;
 }
 @media (max-width:1110px){
     #middle-header{
         display: none;
     }
-    body{
-        margin-left: 20px;
+    #right-header .material-icons{
+        display: none;
     }
-    #right-para1 img{
-        width: 250%;
-        margin-top: 25%;
+    #right-header label{
+display: none;
     }
-    #left-para1{
-        width: 100%;
-    }
+     
 }
+@media (max-width:991px){
+    img{
+        width: 40%;
+        margin-left: 25%;
+}
+#right-header{
+    margin-top: 15px;
+}
+}
+@media (min-width: 768px) and (max-width:990px){
+    .col-sm-1 {
+        width: 25%;
+}
+}
+.buttons{
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: white;
+}
+.buttonz{
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid #0a66c2;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: white;
+    color: #0a66c2;
+}
+#second-para{
+    margin-top: 50px;
+}
+.col-md-7{
+    margin-top: 50px;
+}
+.content{
+    font-size: 20px;
+    font-weight: 300;
+}
+.topic > h1{
+    font-size: 50px;
+    font-weight:300;
+}
+#third-para{
+margin-top: 100px;
+}
+.reminder{
+    margin-bottom: 30px;
+}
+.topics > h1{
+    font-size: 50px;
+    font-weight:300;
+    margin-top: 50px;
+}
+.buttonx{
+    margin-bottom: 10px;
+    padding: 5px 30px 5px 10px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: white;
+    font-size: 15px;
+}
+.topix > h1{
+    font-size: 40px;
+    font-weight:400;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:brown;
+    padding: 20px;
+}
+#fourth-para{
+    background-color: #f1ece5;
+    
+}
+.images{
+   width: 50%;
+}
+.dropdown > select{
+    margin-top: 30px;
+    padding: 15px 10px ;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.butin{
+    margin-top: 30px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: white;
+}
+
